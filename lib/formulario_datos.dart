@@ -108,6 +108,16 @@ class _FormularioState extends State<Formulario> {
           key: _formKey,
           child: ListView(
             children: <Widget>[
+              const Row(
+                children: [
+                  Expanded(
+                    child: Image(
+                      image: AssetImage('assets/images/christ.jpg'),
+                      height: 200,
+                    ),
+                  ),
+                ],
+              ),
               TextFormField(
                 controller: _nombreController,
                 decoration: const InputDecoration(
